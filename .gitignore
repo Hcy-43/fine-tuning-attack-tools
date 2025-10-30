@@ -1,0 +1,46 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+
+# Local model & data assets (large, regenerate via scripts/ or download separately)
+models/*
+!models/README.md
+
+ft_models/*
+!ft_models/README.md
+
+data/*
+!data/README.md
+
+classifiers/*
+!classifiers/README.md
+
+# Extracted activation vectors (regenerate via scripts/representation.sh)
+output_data/
+
+# Raw model generations and per-example judge transcripts (regenerate via
+# scripts/inference*.sh + scripts/gpt_eval*.sh). Aggregated summary.md files
+# and notebooks are kept.
+evaluation_results/**/*.jsonl
+evaluation_outputs/**/*.jsonl
+
+# Auto-generated library cache (unsloth compiles trainer classes into this
+# directory at import time)
+notebooks/unsloth_compiled_cache/
+
+# Experiment tracking
+wandb/
+*.log
